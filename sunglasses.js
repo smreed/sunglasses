@@ -34,4 +34,12 @@ chrome.extension.onRequest.addListener(
     }
   });
 
+window.addEventListener('keyup', sunglassesKeyUp, false);
 
+function sunglassesKeyUp(e) {
+  switch (e.which) {
+    default:
+      console.log('Key up from ', e.which);
+      break;
+  }
+}
